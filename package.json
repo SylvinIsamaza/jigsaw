@@ -1,0 +1,49 @@
+{
+  "name": "jigsaw",
+  "main": "src/js/main.js",
+  "version": "0.1.1",
+  "private": true,
+  "keywords": [
+    "pixi.js",
+    "pixijs",
+    "webpack",
+    "game",
+    "babel",
+    "es6",
+    "es7",
+    "es8",
+    "web",
+    "html5",
+    "javascript"
+  ],
+  "author": "yulijun",
+  "scripts": {
+    "start": "webpack-dev-server --open --config webpack.dev.js",
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean",
+    "build": "webpack --config webpack.prod.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/plugin-transform-runtime": "^7.7.6",
+    "@babel/preset-env": "^7.7.7",
+    "babel-loader": "^8.0.6",
+    "copy-webpack-plugin": "^5.1.1",
+    "html-webpack-plugin": "^3.2.0",
+    "imagemin-webpack-plugin": "^2.4.2",
+    "rimraf": "^3.0.2",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.10.1",
+    "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.7.7",
+    "core-js": "^3.6.2",
+    "mustache": "^3.2.1",
+    "pixi-sound": "^3.0.4",
+    "pixi.js": "^5.2.0",
+    "sweetalert": "^2.1.2",
+    "throttle-debounce": "^2.1.0"
+  }
+}
